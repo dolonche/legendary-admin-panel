@@ -1,0 +1,165 @@
+.table {
+	display: grid;
+	box-shadow: $main-shadow;
+	border-radius: $default-brs;
+	min-width: 100%;
+	width: auto;
+	overflow-x: auto;
+	font-size: 13px;
+	align-items: stretch;
+	position: relative;
+
+	&:hover &__rebuild {
+		opacity: 1;
+	}
+
+	&__open{
+		position: absolute;
+		width: 30px;
+		height: 30px;
+
+	}
+
+	&__rebuild {
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		font-size: 0;
+		box-shadow: none;
+		border: none;
+		background-image: url(../assets/img/icon/settings-min-primary.svg);
+		cursor: pointer;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 15px;
+		height: 15px;
+		background-color: transparent;
+		opacity: 0;
+		transition: 0.4s opacity;
+
+	}
+
+	&__row {
+		display: contents;
+		padding-left: 16px;
+		padding-right: 16px;
+
+		&:first-child {
+			.table__cell {
+				&:first-child {
+					border-top-left-radius: $default-brs;
+				}
+
+				&:last-child {
+					border-top-right-radius: $default-brs;
+				}
+			}
+		}
+
+		&:nth-of-type(2n-1) {
+			.table__cell {
+				background-color: $bg-content-color;
+			}
+		}
+
+		&:nth-of-type(2n) {
+			.table__cell {
+				background-color: $bg-color;
+			}
+		}
+		&--selected:nth-of-type(n){
+			.table__cell{
+				background-color: $main-color;
+				color: $bg-color;
+			}
+		}
+
+		&--title {
+			font-weight: 500;
+
+			.table__cell {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				align-items: center;
+
+				a {
+					color: inherit;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&__cell {
+		padding-top: 17px;
+		padding-bottom: 17px;
+		padding-right: 18px;
+		position: relative;
+
+		&:hover &-resize {
+			opacity: 0.3;
+		}
+
+		&--checkbox {
+			padding-top: 15px;
+		}
+
+		&--being-resized {
+			.table__cell {
+				&-resize {
+					opacity: 1;
+				}
+			}
+		}
+
+		&:first-of-type {
+			padding-left: 16px;
+		}
+
+		&-resize {
+			position: absolute;
+			top: 0;
+			right: 3px;
+			bottom: 0;
+			background: $sub-color;
+			opacity: 0;
+			width: 3px;
+			cursor: col-resize;
+
+			&:hover {
+				opacity: 1 !important;
+			}
+		}
+	}
+
+	&--modal {
+		box-shadow: none;
+
+		.table {
+			&__row {
+				&:first-of-type {
+					.table__cell {
+						&:first-of-type {
+							border-top-left-radius: 0;
+						}
+
+						&:last-of-type {
+							border-top-right-radius: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&--level{
+		display: none;
+	}
+
+	&--compact &__cell {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}

@@ -1,0 +1,158 @@
+.noUi-target,
+.noUi-target * {
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-ms-touch-action: none;
+	touch-action: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+
+.noUi-connect,
+.noUi-handle,
+.noUi-marker,
+.noUi-origin,
+.noUi-pips,
+.noUi-tooltip,
+.noUi-value {
+	position: absolute
+}
+
+.noUi-connects {
+	z-index: 0;
+	border-radius: 3px
+}
+
+.noUi-connect,
+.noUi-origin {
+	will-change: transform;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	-ms-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	-webkit-transform-style: preserve-3d;
+	transform-origin: 0 0;
+	transform-style: flat
+}
+
+
+.noUi-origin {
+	height: 10%;
+	width: 10%
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+	left: 0;
+	right: auto
+}
+
+.noUi-horizontal .noUi-origin {
+	height: 0
+}
+
+.noUi-touch-area {
+	height: 100%;
+	width: 100%
+}
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+	-webkit-transition: transform .3s;
+	transition: transform .3s
+}
+
+.noUi-state-drag * {
+	cursor: inherit !important
+}
+
+.noUi-draggable {
+	cursor: ew-resize
+}
+
+
+[disabled] .noUi-connect {
+	background: #B8B8B8
+}
+
+[disabled] .noUi-handle,
+[disabled].noUi-handle,
+[disabled].noUi-target {
+	cursor: not-allowed
+}
+
+.rangeslider {
+	&__stick {
+		&.noUi-target {
+			border-radius: 3px;
+			background-color: $bg-color;
+			box-shadow: $main-shadow;
+			height: 5px;
+			position: relative;
+
+			.noUi-base,
+			.noUi-connects {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 1
+			}
+
+			.noUi-connect {
+				border-radius: 3px;
+				background-color: $main-color;
+				height: 100%;
+				width: 100%;
+			}
+
+			.noUi-handle {
+				background-color: $main-color;
+				box-shadow: $main-shadow;
+				border-radius: 100%;
+				width: 12px;
+				height: 12px;
+				border: 2px solid $bg-color;
+				top: -4px;
+				right: -8px;
+				cursor: pointer;
+				&.noUi-handle-upper{
+					right: -4px;
+				}
+			}
+		}
+	}
+
+	&__value {
+		display: flex;
+		box-shadow: $main-shadow;
+		border-radius: $default-brs;
+
+		&-start,
+		&-end {
+			flex-grow: 2;
+			border: none;
+			padding-left: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font: inherit;
+			outline: none;
+		}
+
+		&-start {
+			border-right: 1px solid $decor-light-color;
+			border-top-left-radius: $default-brs;
+			border-bottom-left-radius: $default-brs;
+		}
+
+		&-end {
+			border-top-right-radius: $default-brs;
+			border-bottom-right-radius: $default-brs;
+		}
+	}
+}

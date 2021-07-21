@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="page-wrapper">
+		//= include/header.html
+		//= include/aside.html
+		<main class="page-main padding-bottom-0">
+			<h1 class="page-title">Кампании</h1>
+			<section class="tabs margin-bottom-5">
+				<div class="tabs__nav">
+					<span class="tabs__nav-item tabs__nav-item--active">Настройки</span>
+					<span class="tabs__nav-item">Объявления</span>
+					<span class="tabs__nav-item">Таргетинг</span>
+				</div>
+				<div class="tabs__content tabs__content--light">
+					<div class="tabs__content-item">
+						<div class="flex flex--v">
+							<h3 class="inner-title">
+								Настройки
+							</h3>
+							<div class="checkbox-bunch margin-bottom-3">
+								<input type="checkbox" name="1" id="1" class="checkbox-bunch__input" checked>
+								<label for="1" class="checkbox-bunch__label">Активна</label>
+							</div>
+							<div class="checkbox-bunch margin-bottom-3">
+								<input type="checkbox" name="2" id="2" class="checkbox-bunch__input">
+								<label for="2" class="checkbox-bunch__label">Бессрочна</label>
+							</div>
+							<div class="form-item form-item--date form-item--invert margin-bottom-3">
+								<label for="zip" class="form-item__label">Период действия <sup class="important-font">*</sup></label>
+								<input type="text" name="zip" id="zip" class="input date" value="">
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="zip" class="form-item__label">Название <sup class="important-font">*</sup></label>
+								<input type="text" name="zip" id="zip" class="input" value="Никоретте">
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="zip" class="form-item__label">Описание <sup class="important-font">*</sup></label>
+								<textarea type="text" name="metro" id="metro" class="textarea" value=""></textarea>
+							</div>
+							<h3 class="inner-title margin-top-3">
+								Цель
+							</h3>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<span for="zip" class="form-item__label">Тип</span>
+								<div class="radio-slide">
+									<div class="radio-slide__item">
+										<input type="radio" name="type" id="type1" class="radio-slide__input" checked>
+										<label for="type1" class="radio-slide__label">Конфигурируемая страница</label>
+									</div>
+									<div class="radio-slide__item">
+										<input type="radio" name="type" id="type2" class="radio-slide__input">
+										<label for="type2" class="radio-slide__label">Внешняя ссылка</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="zip" class="form-item__label">Название <sup class="important-font">*</sup></label>
+								<input type="text" name="zip" id="zip" class="input" value="Никоретте">
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="zip" class="form-item__label">Описание <sup class="important-font">*</sup></label>
+								<textarea type="text" name="metro" id="metro" class="textarea" value=""></textarea>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="lastname" class="form-item__label">Стиль акции</label>
+								<select name="" class="select select--default">
+									<option value="Выполнен">Default</option>
+									<option value="Отложен">Всплывающее окно</option>
+									<option value="В ожидании">В ожидании</option>
+								</select>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<span class="form-item__label">Файл csv c ассортиментными позициями</span>
+								<div class="upload-file">
+									<input type="file" name="file" id="file" class="upload-file__input">
+									<label for="file" class="upload-file__label">
+										<span class="upload-file__label-name">Файл не выбран</span>
+									</label>
+									<span class="upload-file__action"></span>
+								</div>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-2">
+								<label for="zip" class="form-item__label">Поиск по всем товарам</label>
+								<div class="search-block width-auto">
+									<input type="search" class="input" placeholder="Найдите ассортиментную позицию по коду или названию">
+									<button type="button" class="search-block__button">Поиск</button>
+								</div>
+							</div>
+							<section class="table" style="grid-template-columns:  repeat(5, minmax(max-content, 1fr))">
+								<div class="table__row table__row--title">
+									<div class="table__cell" data-type="text-short">
+										<div class="checkbox-bunch checkbox-bunch--s">
+											<input type="checkbox" name="all" id="all" class="checkbox-bunch__input">
+											<label for="all" class="checkbox-bunch__label"></label>
+										</div>
+									</div>
+									<div class="table__cell flex" data-type="text-short">
+										<div class="sort-bunch">
+											<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+											<span class="sort-bunch__bottom">По убыванию</span>
+										</div>
+										<a href="#">ID АП</a>
+									</div>
+									<div class="table__cell flex" data-type="text-short">
+										<div class="sort-bunch">
+											<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+											<span class="sort-bunch__bottom">По убыванию</span>
+										</div>
+										<a href="#">Код АП</a>
+									</div>
+									<div class="table__cell flex" data-type="text-short">
+										<div class="sort-bunch">
+											<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+											<span class="sort-bunch__bottom">По убыванию</span>
+										</div>
+										<a href="#">Наименованиние</a>
+									</div>
+									<div class="table__cell flex" data-type="text-short">
+										<a href="#"></a>
+									</div>
+								</div>
+								<div class="table__row">
+									<div class="table__cell table__cell--checkbox">
+										<div class="checkbox-bunch checkbox-bunch--s">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label"></label>
+										</div>
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										Никоретте спрей д/метсного применения доз 1мг
+									</div>
+									<div class="table__cell flex">
+										<button class="button-delete button-delete--s margin-left-auto" type="button"></button>
+									</div>
+								</div>
+								<div class="table__row">
+									<div class="table__cell table__cell--checkbox">
+										<div class="checkbox-bunch checkbox-bunch--s">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label"></label>
+										</div>
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										Никоретте спрей д/метсного применения доз 1мг
+									</div>
+									<div class="table__cell flex">
+										<button class="button-delete button-delete--s margin-left-auto" type="button"></button>
+									</div>
+								</div>
+								<div class="table__row">
+									<div class="table__cell table__cell--checkbox">
+										<div class="checkbox-bunch checkbox-bunch--s">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label"></label>
+										</div>
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										Никоретте спрей д/метсного применения доз 1мг
+									</div>
+									<div class="table__cell flex">
+										<button class="button-delete button-delete--s margin-left-auto" type="button"></button>
+									</div>
+								</div>
+								<div class="table__row">
+									<div class="table__cell table__cell--checkbox">
+										<div class="checkbox-bunch checkbox-bunch--s">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label"></label>
+										</div>
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										Никоретте спрей д/метсного применения доз 1мг
+									</div>
+									<div class="table__cell flex">
+										<button class="button-delete button-delete--s margin-left-auto" type="button"></button>
+									</div>
+								</div>
+								<div class="table__row">
+									<div class="table__cell table__cell--checkbox">
+										<div class="checkbox-bunch checkbox-bunch--s">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label"></label>
+										</div>
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										405273
+									</div>
+									<div class="table__cell flex">
+										Никоретте спрей д/метсного применения доз 1мг
+									</div>
+									<div class="table__cell flex">
+										<button class="button-delete button-delete--s margin-left-auto" type="button"></button>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="bottom-action">
+				<button class="button button--primary margin-right-6">Сохранить</button>
+				<button class="button">Сохранить и выйти</button>
+				<button class="button-delete margin-left-auto">Удалить</button>
+			</div>
+		</main>
+	</div>
+	<!-- body -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

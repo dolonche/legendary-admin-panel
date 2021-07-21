@@ -1,0 +1,16 @@
+.select-add{
+	&__input{
+		&+.select2-container .select2-selection--single{
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+	&__button{
+		height: auto;
+		min-width: 47px;
+		border-top-right-radius: $default-brs;
+		border-bottom-right-radius: $default-brs;
+		background-size: auto;
+		border-left: 1px solid $decor-light-color;
+	}
+}

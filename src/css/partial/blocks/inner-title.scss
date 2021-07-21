@@ -1,0 +1,26 @@
+.inner-title {
+	grid-column: span 3;
+	font-weight: 500;
+	color: $font-color;
+	margin-top: 0;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+
+	&::after {
+		content: "";
+		margin-left: 24px;
+		flex-grow: 2;
+		height: 1px;
+		background-color: $font-color;
+	}
+	.button{
+		order: 100;
+		margin-left: 20px;
+	}
+	.button-delete{
+		order: 100;
+		margin-left: 20px;
+	}
+}

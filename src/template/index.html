@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="page-wrapper page-wrapper--close-menu">
+		//= include/header.html
+		//= include/aside.html
+		<main class="page-main">
+			<h1 class="page-title">Заказы</h1>
+			<section class="tabs">
+				<div class="tabs__nav">
+					<span class="tabs__nav-item tabs__nav-item--active">Фильтр</span>
+					<span class="tabs__nav-item">Приоритетные</span>
+					<span class="tabs__nav-item">Оплаченные</span>
+					<span class="tabs__nav-item">Добавить</span>
+				</div>
+				<div class="tabs__content">
+					<div class="tabs__content-item">
+						<form class="grid-form">
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Покупатель</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Номер заказа</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Статус заказа</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Дата изменения</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Покупатель</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Email</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-item">
+								<button class="form-item__remove" type="button" data-action="remove-parent">Удалить фильтр</button>
+								<label for="customer" class="form-item__label">Телефон</label>
+								<input type="text" name="customer" id="customer" class="input">
+							</div>
+							<div class="form-buttons">
+								<button class="button button--primary" type="button">Добавить</button>
+								<div class="buttons-bunch">
+									<button class="button buttons-bunch__item" type="submit">Найти</button><button class="button buttons-bunch__item" type="button">Отменить</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="table margin-top-4" style="grid-template-columns: 
+    minmax(64px, 1fr)
+    minmax(30px, 1fr)
+    minmax(140px, 1fr)
+    minmax(80px, 1.67fr)
+    minmax(80px, 1.67fr)
+    minmax(80px, 1.67fr)
+    minmax(80px, 1.67fr)
+    minmax(165px, 2.27fr)
+    minmax(120px, 1.67fr)
+    minmax(80px, 1.67fr);">
+    <button class="table__rebuild" type="button">Редактировать поля таблицы</button>
+				<div class="table__row table__row--title">
+					<div class="table__cell" data-type="text-short">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="all" id="all" class="checkbox-bunch__input">
+							<label for="all" class="checkbox-bunch__label"></label>
+						</div>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="">ID</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Дата создания</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Статус</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Оплачен</a>
+						<div class="table__cell-resize" data-type="text-short"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Отменен</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Сумма</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Позиции</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<div class="sort-bunch">
+							<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+							<span class="sort-bunch__bottom">По убыванию</span>
+						</div>
+						<a href="#">Тип оплаты</a>
+						<div class="table__cell-resize"></div>
+					</div>
+					<div class="table__cell flex" data-type="text-short">
+						<a href="#">Действие</a>
+						<div class="table__cell-resize"></div>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell table__cell--checkbox">
+						<div class="checkbox-bunch checkbox-bunch--s">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label"></label>
+						</div>
+					</div>
+					<div class="table__cell flex">
+						1
+					</div>
+					<div class="table__cell flex">
+						28.02.2021
+						06:05:06
+					</div>
+					<div class="table__cell flex">
+						Принят,
+						ожидается
+						оплата
+					</div>
+					<div class="table__cell flex">
+						Да
+					</div>
+					<div class="table__cell flex">
+						Нет
+					</div>
+					<div class="table__cell flex">
+						896 ₽
+					</div>
+					<div class="table__cell flex">
+						[1056] Аевит (1), <br>
+						[841] Парацетамол (3), <br>
+						[386] Интерферон (4)
+					</div>
+					<div class="table__cell flex">
+						Наличные
+					</div>
+					<div class="table__cell flex">
+						<span class="context-open">
+							<ul class="context-open__list">
+								<li class="context-open__list-item">Ответить</li>
+								<li class="context-open__list-item">Удалить</li>
+								<li class="context-open__list-item">Игнорировать</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+			</section>
+			<div class="table-info">
+				<div class="table-info__top">
+					<div class="table-info__items">
+						<span class="table-info__item">Элементов: 55</span>
+						<span class="table-info__item">Показано 1 – 10</span>
+					</div>
+					<div class="table-info__numbers">
+						<span class="table-info__item">Валовая прибыль: 1 644 781,87 ₽</span>
+						<span class="table-info__item">Сумма по таблице: 2 262 602,08 ₽</span>
+					</div>
+				</div>
+				<div class="table-info__bottom">
+					<div class="table-info__action">
+						<button class="button">Выгрузить таблицу</button>
+					</div>
+					<ul class="pagination">
+						<li class="pagination__item"><a href="" class="pagination__item-link pagination__item-link--active">1</a></li>
+						<li class="pagination__item"><a href="" class="pagination__item-link">2</a></li>
+						<li class="pagination__item"><a href="" class="pagination__item-link">3</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</div>
+	<!-- body -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

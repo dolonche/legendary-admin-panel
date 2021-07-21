@@ -1,0 +1,17 @@
+.selected-item{
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: $main-shadow;
+	background-color: $bg-content-color;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	&__text{
+		margin-right: 15px;
+		color: $bg-sub-color;
+		opacity: 0.6;
+	}
+
+}

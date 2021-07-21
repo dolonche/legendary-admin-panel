@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Комментарии</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="page-wrapper page-wrapper--close-menu">
+		//= include/header.html
+		//= include/aside.html
+		<main class="page-main padding-bottom-0">
+			<h1 class="page-title">Кампании</h1>
+			<section class="tabs margin-bottom-5">
+				<div class="tabs__nav">
+					<span class="tabs__nav-item background-content">Настройки</span>
+					<span class="tabs__nav-item tabs__nav-item--active">Объявления</span>
+					<span class="tabs__nav-item background-content">Таргетинг</span>
+				</div>
+				<div class="tabs__content background-content">
+					<div class="tabs__content-item">
+						<h3 class="inner-title">Объявления</h3>
+						<div class="flex round-default shadow-default background-default margin-bottom-3">
+							<img src="assets/img/product-card-item.png" alt="" class="width-200 margin-right-3">
+							<div class="flex width-auto padding-top-4 padding-bottom-4">
+								<span class="sub-text margin-right-2">Плейсмент:</span>
+								<div class="flex flex--v"><span>Раздел акций</span><span>Страница акции</span><span>Слайдер на главной</span></div>
+							</div>
+							<div class="buttons-bunch buttons-bunch--v padding-top-4 padding-bottom-4 margin-left-auto margin-right-3">
+								<button class="buttons-bunch__item button" type="button">Коипровать</button>
+								<button class="buttons-bunch__item button" type="button">Редактировать</button>
+								<button class="buttons-bunch__item button button--important" type="button">Удалить</button>
+							</div>
+						</div>
+						<div class="flex round-default shadow-default background-default margin-bottom-6">
+							<img src="assets/img/product-card-item.png" alt="" class="width-200 margin-right-3">
+							<div class="flex width-auto padding-top-4 padding-bottom-4">
+								<span class="sub-text margin-right-2">Плейсмент:</span>
+								<div class="flex flex--v"><span>Раздел акций</span><span>Страница акции</span><span>Слайдер на главной</span></div>
+							</div>
+							<div class="buttons-bunch buttons-bunch--v padding-top-4 padding-bottom-4 margin-left-auto margin-right-3">
+								<button class="buttons-bunch__item button" type="button">Коипровать</button>
+								<button class="buttons-bunch__item button" type="button">Редактировать</button>
+								<button class="buttons-bunch__item button button--important" type="button">Удалить</button>
+							</div>
+						</div>
+						<h3 class="inner-title">Параметры</h3>
+						<div class="flex flex--v">
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="lastname" class="form-item__label">Плейсмент</label>
+								<select name="" class="select select--default">
+									<option value="Выполнен">Всплывающее окно</option>
+									<option value="Отложен">Всплывающее окно</option>
+									<option value="В ожидании">В ожидании</option>
+								</select>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="zip" class="form-item__label">Заголовок</label>
+								<input type="text" name="zip" id="zip" class="input" value="Никоретте">
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="metro" class="form-item__label">Описание</label>
+								<textarea type="text" name="metro" id="metro" class="textarea" value=""></textarea>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<span class="form-item__label">Десктопное изображение</span>
+								<div class="upload-file">
+									<input type="file" name="file" id="file" class="upload-file__input">
+									<label for="file" class="upload-file__label">
+										<span class="upload-file__label-name">Файл не выбран</span>
+									</label>
+									<span class="upload-file__action"></span>
+								</div>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<span class="form-item__label">Мобильное изображение</span>
+								<div class="upload-file">
+									<input type="file" name="file" id="file-1" class="upload-file__input">
+									<label for="file-1" class="upload-file__label">
+										<span class="upload-file__label-name">Файл не выбран</span>
+									</label>
+									<span class="upload-file__action"></span>
+								</div>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="metro" class="form-item__label">Цвет текста</label>
+								<div class="select-color">
+									<input type="color" name="" id="" class="input select-color__input">
+								</div>
+							</div>
+							<div class="form-item form-item--invert margin-bottom-3">
+								<label for="metro" class="form-item__label">Цвет фона</label>
+								<div class="select-color">
+									<input type="color" name="" id="" class="input select-color__input">
+								</div>
+							</div>
+						</div>
+						<h3 class="inner-title">Локальные контексты таргетинга</h3>
+						<div class="grid-form">
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v">
+									<b class="category-title margin-bottom-2">По городам и регионам</b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Локация любимой аптеки</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Локация пользователя</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Локация любимой аптеки</label>
+									</div>
+								</div>
+								<div class="flex flex--v margin-top-1">
+									<b class="category-title margin-bottom-2">По источнику</b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Страница</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v">
+									<b class="category-title margin-bottom-2">По аптекам</b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Аптеки предыдущих заказов</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Аптека текущего заказа</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Любимая аптека</label>
+									</div>
+								</div>
+								<div class="flex flex--v margin-top-1">
+									<b class="category-title margin-bottom-2">По сумме</b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Сумма в корзине</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v margin-left-auto width-max-cont">
+									<b class="category-title margin-bottom-2">По товарам</b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Товары из покупок</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Просмотренные товары</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Товары в заказе</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Товары в корзине</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Результаты поиска</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Страница поиска</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="bottom-action">
+				<button class="button button--primary margin-right-6">Сохранить</button>
+				<button class="button">Сохранить и выйти</button>
+				<button class="button-delete margin-left-auto">Удалить</button>
+			</div>
+		</main>
+	</div>
+	<!-- body -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

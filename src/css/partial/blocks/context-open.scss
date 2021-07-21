@@ -1,0 +1,107 @@
+.context-open {
+	position: relative;
+	width: 20px;
+	height: 16px;
+	cursor: pointer;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		background-color: $bg-sub-color;
+		border-radius: 100%;
+		left: 0;
+		top: 50%;
+		transform: translatey(-50%);
+		transition: background-color 0.4s linear 0s,
+
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		background-color: $bg-sub-color;
+		border-radius: 100%;
+		left: 7px;
+		top: 50%;
+		transform: translatey(-50%);
+		box-shadow: 7px 0 0 0 $bg-sub-color;
+		transition: background-color 0.4s linear 0.2s, box-shadow 0.4s linear 0.2s;
+	}
+
+	&:hover {
+		&::before {
+			background-color: $main-color;
+		}
+
+		&::after {
+			background-color: $main-color;
+			box-shadow: 7px 0 0 0 $main-color;
+
+		}
+	}
+
+	&.context-open--open {
+		&::before {
+			background-color: $main-color;
+		}
+
+		&::after {
+			background-color: $main-color;
+			box-shadow: 7px 0 0 0 $main-color;
+
+		}
+
+		.context-open__list {
+			display: flex;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		right: 1px;
+		top: calc(100% + 6px);
+		border-radius: $default-brs;
+		filter: drop-shadow($main-shadow);
+		padding: 0;
+		margin: 0;
+		z-index: 100;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			right: 0;
+			border-bottom: 10px solid $bg-color;
+			border-left: 10px solid transparent;
+		}
+
+		&-item {
+			display: flex;
+			justify-content: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
+			background-color: $bg-color;
+			border-bottom: 1px solid $decor-light-color;
+			font-size: 13px;
+
+			&:first-child {
+				border-top-left-radius: $default-brs;
+			}
+
+			&:last-child {
+				border-bottom: none;
+				border-bottom-left-radius: $default-brs;
+				border-bottom-right-radius: $default-brs;
+			}
+		}
+	}
+}

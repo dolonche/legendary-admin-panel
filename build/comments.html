@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Комментарии</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="page-wrapper page-wrapper--close-menu">
+		<header class="page-header">
+			<div class="page-header__logo">
+				<a class="page-header__logo-img" href="index.html">
+					<img src="assets/img/logo.svg" alt="" class="page-header__logo-img-content">
+				</a>
+				<div class="page-header__logo-text"></div>
+			</div>
+			<div class="page-header__actions">
+				<div class="page-header__actions-notification">
+					<span class="page-header__actions-notification-value">3</span>
+				</div>
+				<form class="search-block margin-left-auto">
+					<input type="search" class="input">
+					<button type="submit" class="search-block__button">Поиск</button>
+				</form>
+			</div>
+		</header>
+		<aside class="sidebar">
+			<ul class="sidebar__list">
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/content.svg" alt="Контент" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Контент</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Контент</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/services.svg" alt="Сервисы" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Сервисы</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Сервисы</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/marketing.svg" alt="Маркетинг" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Маркетинг</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Маркетинг</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/settings.svg" alt="Настройки" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Настройки</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Настройки</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/cart.svg" alt="Магазин" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Магазин</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Магазин</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="sidebar__user">
+				<a href="" class="sidebar__user-main">
+					<img src="assets/img/user.png" alt="" class="sidebar__user-main-img">
+				</a>
+				<ul class="sidebar__user-menu">
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<main class="page-main padding-bottom-0">
+			<h1 class="page-title">Комментарий</h1>
+			<div class="inner-content margin-bottom-5">
+				<h3 class="inner-title">
+					Товар</h3>
+				<div class="flex round-default shadow-default background-default margin-bottom-6">
+					<img src="assets/img/product-card-item.png" alt="" class="width-100 margin-right-3">
+					<a href="#" class="link width-200 padding-top-4 margin-right-6">Бальзам Ла Рош Позе
+						(La Roche-Posay)
+						Цикапласт В5</a>
+					<div class="flex flex--v width-auto padding-top-4 padding-bottom-4 margin-right-6">
+						<div class="flex margin-bottom-2"><span class="sub-text margin-right-2">Производитель:</span>La Roshe</div>
+						<div class="flex margin-bottom-2"><span class="sub-text margin-right-2">Страна:</span>Россия</div>
+						<div class="flex"><span class="sub-text margin-right-2">Код АП:</span>40031CNT6B</div>
+					</div>
+					<div class="flex flex--v width-auto padding-top-4 padding-bottom-4 margin-right-auto">
+						<div class="flex margin-bottom-2"><span class="sub-text margin-right-2">Производитель:</span>La Roshe</div>
+						<div class="flex margin-bottom-2"><span class="sub-text margin-right-2">Страна:</span>Россия</div>
+						<div class="flex"><span class="sub-text margin-right-2">Код АП:</span>40031CNT6B</div>
+					</div>
+					<div class="flex width-auto margin-left-auto margin-top-auto margin-bottom-auto margin-right-2">
+						<a href=""><img src="assets/img/icon/notebook.svg" alt=""></a>
+					</div>
+				</div>
+				<h3 class="inner-title">
+					Комментарии</h3>
+				<section class="messenger">
+					<div class="messenger__body">
+						<div class="messenger__body-inner">
+							<div class="messenger__body-inner-message">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">M</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Максим Островский</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:30</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Замечательное средство.</div>
+										<div class="messenger__body-inner-message-right-text-item">Спасло мне жизнь -_-</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">M</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Максим Островский</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:30</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Замечательное средство.</div>
+										<div class="messenger__body-inner-message-right-text-item">Спасло мне жизнь -_-</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">M</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Максим Островский</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:30</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Замечательное средство.</div>
+										<div class="messenger__body-inner-message-right-text-item">Спасло мне жизнь -_-</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">M</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Максим Островский</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:30</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Замечательное средство.</div>
+										<div class="messenger__body-inner-message-right-text-item">Спасло мне жизнь -_-</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message messenger__body-inner-message--thread">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">Е</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Евгений Понасенков</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:44</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Максим, а мне не спасло</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message messenger__body-inner-message--thread">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">О</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Оператор Андрей</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:44</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Максим, поздравляем</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message messenger__body-inner-message--thread">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">О</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Оператор Андрей</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:44</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Евгений, сожалеем</div>
+									</div>
+								</div>
+							</div>
+							<div class="messenger__body-inner-message">
+								<div class="messenger__body-inner-message-left">
+									<div class="messenger__body-inner-message-left-avatar">
+										<img src="assets/img/content/slider-1.png" alt="" class="messenger__body-inner-message-left-avatar-image">
+										<div class="messenger__body-inner-message-left-avatar-letter">И</div>
+									</div>
+								</div>
+								<div class="messenger__body-inner-message-right">
+									<div class="messenger__body-inner-message-right-info">
+										<span class="messenger__body-inner-message-right-info-name">Игорь Косинский</span>
+										<div class="flex flex--v width-auto margin-left-auto">
+											<date class="messenger__body-inner-message-right-info-date">28.04.2021 1:44</date>
+											<span class="context-open margin-left-auto">
+												<ul class="context-open__list">
+													<li class="context-open__list-item">Ответить</li>
+													<li class="context-open__list-item">Удалить</li>
+													<li class="context-open__list-item">Игнорировать</li>
+												</ul>
+											</span>
+										</div>
+									</div>
+									<div class="messenger__body-inner-message-right-text">
+										<div class="messenger__body-inner-message-right-text-item">Оказалось гомеопатия не работает, как так?</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="messenger__form">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Ваш ответ..." class="messenger__form-message" spellcheck="true"></textarea>
+						<button class="button button--primary">Отправить</button>
+					</form>
+				</section>
+			</div>
+		</main>
+	</div>
+	<!-- body -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

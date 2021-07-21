@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	color: $font-color;
+	font-size: 13px;
+}
+b{
+	font-weight: 500;
+}

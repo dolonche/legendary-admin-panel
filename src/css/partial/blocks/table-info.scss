@@ -1,0 +1,28 @@
+.table-info{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 12px;
+	}
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__items{
+		display: flex;
+	}
+	&__numbers{
+		display: flex;
+	}
+	&__item{
+		margin-right: 30px;
+		color: $font-color;
+		opacity: 0.6;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

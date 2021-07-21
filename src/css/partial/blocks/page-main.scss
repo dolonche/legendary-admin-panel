@@ -1,0 +1,29 @@
+.page-main {
+	margin-left: 270px;
+	padding-top: 68px;
+	background-color: $bg-content-color;
+	// background-image: radial-gradient(circle, #74ebd5, #acb6e5);
+	min-height: 100vh;
+	// animation: hueRotate 1s linear infinite;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 25px;
+}
+
+@keyframes hueRotate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	50% {
+		filter: hue-rotate(180deg);
+
+	}
+
+	100% {
+		filter: hue-rotate(0deg);
+
+	}
+}

@@ -1,0 +1,57 @@
+.checkbox-bunch{
+	&__input{
+		display: none;
+		&:checked{
+			& + label{
+				&::after{
+					content:"";
+					position: absolute;
+					background-color: $main-color;
+					border-radius: 4px;
+					width: 19px;
+					height: 19px;
+					left: 3px;
+				}
+			}
+		}
+	}
+	&__label{
+		position: relative;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		user-select: none;
+		&::before{
+			content:"";
+			width: 25px;
+			height: 25px;
+			border-radius: 6px;
+			box-shadow: $main-shadow;
+			left: 0;
+			top: 0;
+			margin-right: 10px;
+		}
+	}
+	&--s{
+		.checkbox-bunch{
+			&__input{
+				&:checked{
+					& + label{
+						&::after{
+							width: 12px;
+							height: 12px;
+							border-radius: 2px;
+						}
+					}
+				}
+			}
+			&__label{
+				&::before{
+					width: 18px;
+					height: 18px;
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+$text-color: #000000;
+
+@mixin font($font-size: 16px, $line-height: 24px, $font-weight: 400, $color: $text-color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+%clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%container {
+  width: 1280px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 100%;
+  }
+}
+
+%container-s {
+  width: 1240px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 100%;
+  }
+}
+
+%grid-padding {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin grid-padding {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+%valid-error-input {
+  box-shadow: 0 2px 10px 1px rgba(252, 3, 107, 0.3);
+
+}
+
+%valid-error-label {
+  position: absolute;
+  top: 100%;
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+%valid-error-label-select {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  top: 100%;
+  margin-top: 5px;
+  white-space: nowrap;
+}

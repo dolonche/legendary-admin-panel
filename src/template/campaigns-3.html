@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Комментарии</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="page-wrapper page-wrapper--close-menu">
+		//= include/header.html
+		//= include/aside.html
+		<main class="page-main padding-bottom-0">
+			<h1 class="page-title">Кампании</h1>
+			<section class="tabs margin-bottom-5">
+				<div class="tabs__nav">
+					<span class="tabs__nav-item background-content">Настройки</span>
+					<span class="tabs__nav-item background-content">Объявления</span>
+					<span class="tabs__nav-item tabs__nav-item--active">Таргетинг</span>
+				</div>
+				<div class="tabs__content background-content">
+					<div class="tabs__content-item">
+						<h3 class="inner-title">Города и регионы <button class="button-delete button-delete--s">Удалить</button></h3>
+						<div class="grid-form">
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v">
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Приморский край</label>
+									</div>
+									<div class="flex flex--v padding-left-2">
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Владивосток</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Находка</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Уссурийск</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Арсеньев</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Артем</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v">
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Хабаровский край</label>
+									</div>
+									<div class="flex flex--v padding-left-2">
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Владивосток</label>
+										</div>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Москва</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Московская область</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Новосибирск</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v margin-left-auto width-300">
+									<b class="category-title margin-bottom-2">Контексты таргетинга <sup class="important-font">*</sup></b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Локация пользователя</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Локация любимой аптеки</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="inner-title">Источники <button class="button-delete button-delete--s">Удалить</button></h3>
+						<div class="grid-form">
+							<div class="form-item form-item--invert margin-bottom-3 grid-column-2">
+								<label for="zip" class="form-item__label">Регулярное выражение</label>
+								<input type="text" name="zip" id="zip" class="input" value="">
+								<button class="link margin-left-auto margin-top-1">Добавить</button>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v margin-left-auto width-300">
+									<b class="category-title margin-bottom-2">Контексты таргетинга <sup class="important-font">*</sup></b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Страница</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="inner-title">Диапозон суммы<button class="button-delete button-delete--s">Удалить</button></h3>
+						<div class="grid-form">
+							<div class="form-item form-item--invert margin-bottom-3 grid-column-2">
+								<div class="rangeslider">
+									<div class="rangeslider__stick margin-bottom-3"></div>
+									<div class="rangeslider__value">
+										<input class="rangeslider__value-start" type="number" min="0" max="1000" step="1" value="10">
+										<input class="rangeslider__value-end" type="number" min="0" max="1000" step="1" value="900">
+									</div>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v margin-left-auto width-300">
+									<b class="category-title margin-bottom-2">Контексты таргетинга <sup class="important-font">*</sup></b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Сумма в корзине</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="inner-title">Товары<button class="button-delete button-delete--s">Удалить</button></h3>
+						<div class="grid-form">
+							<div class="form-item form-item--invert margin-bottom-3 grid-column-2"><span for="zip" class="form-item__label">Поиск по всем товарам</span>
+								<div class="search-block width-auto margin-bottom-3">
+									<input type="search" class="input" placeholder="Найдите ассортиментную позицию по коду">
+									<button type="button" class="search-block__button">Поиск</button>
+								</div>
+								<section class="table" style="grid-template-columns:  repeat(5, minmax(max-content, 1fr))">
+									<div class="table__row table__row--title">
+										<div class="table__cell" data-type="text-short">
+											<div class="checkbox-bunch checkbox-bunch--s">
+												<input type="checkbox" name="all" id="all" class="checkbox-bunch__input">
+												<label for="all" class="checkbox-bunch__label"></label>
+											</div>
+										</div>
+										<div class="table__cell flex" data-type="text-short">
+											<div class="sort-bunch">
+												<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+												<span class="sort-bunch__bottom">По убыванию</span>
+											</div>
+											<a href="#">ID АП</a>
+										</div>
+										<div class="table__cell flex" data-type="text-short">
+											<div class="sort-bunch">
+												<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+												<span class="sort-bunch__bottom">По убыванию</span>
+											</div>
+											<a href="#">Код АП</a>
+										</div>
+										<div class="table__cell flex" data-type="text-short">
+											<div class="sort-bunch">
+												<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+												<span class="sort-bunch__bottom">По убыванию</span>
+											</div>
+											<a href="#">Наименованиние</a>
+										</div>
+										<div class="table__cell flex" data-type="text-short">
+											<a href="#"></a>
+										</div>
+									</div>
+									<div class="table__row">
+										<div class="table__cell table__cell--checkbox">
+											<div class="checkbox-bunch checkbox-bunch--s">
+												<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+												<label for="1" class="checkbox-bunch__label"></label>
+											</div>
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											Никоретте спрей д/метсного применения доз 1мг
+										</div>
+										<div class="table__cell flex">
+											<button class="button-add button-add--s margin-left-auto" type="button"></button>
+										</div>
+									</div>
+									<div class="table__row">
+										<div class="table__cell table__cell--checkbox">
+											<div class="checkbox-bunch checkbox-bunch--s">
+												<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+												<label for="1" class="checkbox-bunch__label"></label>
+											</div>
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											Никоретте спрей д/метсного применения доз 1мг
+										</div>
+										<div class="table__cell flex">
+											<button class="button-add button-add--s margin-left-auto" type="button"></button>
+										</div>
+									</div>
+									<div class="table__row">
+										<div class="table__cell table__cell--checkbox">
+											<div class="checkbox-bunch checkbox-bunch--s">
+												<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+												<label for="1" class="checkbox-bunch__label"></label>
+											</div>
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											Никоретте спрей д/метсного применения доз 1мг
+										</div>
+										<div class="table__cell flex">
+											<button class="button-add button-add--s margin-left-auto" type="button"></button>
+										</div>
+									</div>
+									<div class="table__row">
+										<div class="table__cell table__cell--checkbox">
+											<div class="checkbox-bunch checkbox-bunch--s">
+												<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+												<label for="1" class="checkbox-bunch__label"></label>
+											</div>
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											Никоретте спрей д/метсного применения доз 1мг
+										</div>
+										<div class="table__cell flex">
+											<button class="button-add button-add--s margin-left-auto" type="button"></button>
+										</div>
+									</div>
+									<div class="table__row">
+										<div class="table__cell table__cell--checkbox">
+											<div class="checkbox-bunch checkbox-bunch--s">
+												<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+												<label for="1" class="checkbox-bunch__label"></label>
+											</div>
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											405273
+										</div>
+										<div class="table__cell flex">
+											Никоретте спрей д/метсного применения доз 1мг
+										</div>
+										<div class="table__cell flex">
+											<button class="button-add button-add--s margin-left-auto" type="button"></button>
+										</div>
+									</div>
+									<div class="table__row">
+										<div class="table__cell flex flex-ali-c grid-column-5 padding-top-2 padding-bottom-2">
+											Выделено: 2 элемента <button class="button button--primary margin-left-auto">Добавить</button>
+										</div>
+									</div>
+								</section>
+								<div class="form-item form-item--invert margin-bottom-3 margin-top-3 grid-column-2"><span for="zip" class="form-item__label">Выбранные товары</span>
+									<section class="table" style="grid-template-columns:  repeat(4, minmax(max-content, 1fr))">
+										<div class="table__row">
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												Никоретте спрей д/метсного применения доз 1мг
+											</div>
+											<div class="table__cell flex">
+												<button class="button-add button-add--s button-add--remove margin-left-auto" type="button"></button>
+											</div>
+										</div>
+										<div class="table__row">
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												Никоретте спрей д/метсного применения доз 1мг
+											</div>
+											<div class="table__cell flex">
+												<button class="button-add button-add--s button-add--remove margin-left-auto" type="button"></button>
+											</div>
+										</div>
+										<div class="table__row">
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												Никоретте спрей д/метсного применения доз 1мг
+											</div>
+											<div class="table__cell flex">
+												<button class="button-add button-add--s button-add--remove margin-left-auto" type="button"></button>
+											</div>
+										</div>
+										<div class="table__row">
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												Никоретте спрей д/метсного применения доз 1мг
+											</div>
+											<div class="table__cell flex">
+												<button class="button-add button-add--s button-add--remove margin-left-auto" type="button"></button>
+											</div>
+										</div>
+										<div class="table__row">
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												405273
+											</div>
+											<div class="table__cell flex">
+												Никоретте спрей д/метсного применения доз 1мг
+											</div>
+											<div class="table__cell flex">
+												<button class="button-add button-add--s button-add--remove margin-left-auto" type="button"></button>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v margin-left-auto width-300">
+									<b class="category-title margin-bottom-2">Контексты таргетинга <sup class="important-font">*</sup></b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Страница товара</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Результаты поиска</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Товары в корзине</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Товары в заказе</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Товары из покупок</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3 class="inner-title">Аптеки<button class="button-delete button-delete--s">Удалить</button></h3>
+						<div class="grid-form">
+							<div class="form-item form-item--invert margin-bottom-3 grid-column-2">
+								<div class="search-block width-auto margin-bottom-3">
+									<input type="search" class="input" placeholder="Поиск по всем аптекам">
+									<button type="button" class="search-block__button">Поиск</button>
+								</div>
+								<div class="flex">
+									<div class="flex flex--v width-300">
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">АТ на Примринге</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Аптека на МЖК</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Аптека на Спортивной</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Аптека на Тихоокеанской</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Аптека на проспекте Мира</label>
+										</div>
+										<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+											<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+											<label for="1" class="checkbox-bunch__label">Аптека в Павловской Слободе</label>
+										</div>
+									</div>
+									<div class="flex flex--v margin-left-auto width-auto">
+										<div class="selected-item margin-bottom-2">
+											<span class="selected-item__text">Аптека на проспекте Мира</span><button class="button-add button-add--s button-add--remove"></button>
+										</div>
+										<div class="selected-item margin-bottom-2">
+											<span class="selected-item__text">Аптека на проспекте Мира</span><button class="button-add button-add--s button-add--remove"></button>
+										</div>
+										<div class="selected-item margin-bottom-2">
+											<span class="selected-item__text">Аптека на проспекте Мира</span><button class="button-add button-add--s button-add--remove"></button>
+										</div>
+										<div class="selected-item margin-bottom-2">
+											<span class="selected-item__text">Аптека на проспекте Мира</span><button class="button-add button-add--s button-add--remove"></button>
+										</div>
+										<div class="selected-item margin-bottom-2">
+											<span class="selected-item__text">Аптека на проспекте Мира</span><button class="button-add button-add--s button-add--remove"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-item flex flex--v">
+								<div class="flex flex--v margin-left-auto width-300">
+									<b class="category-title margin-bottom-2">Контексты таргетинга <sup class="important-font">*</sup></b>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Любимая аптека</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Аптека текущего заказа</label>
+									</div>
+									<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+										<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+										<label for="1" class="checkbox-bunch__label">Аптеки предыдущих
+											заказов</label>
+									</div>
+								</div>
+							</div>
+							<div class="flex flex--v width-300">
+								<div class="form-item form-item--invert margin-bottom-3 grid-column-2">
+									<label for="zip" class="form-item__label">Добавить</label>
+									<div class="select-add flex">
+										<select name="" class="select select--default select-add__input">
+											<option value="Выполнен">По сумме</option>
+											<option value="Отложен">Всплывающее окно</option>
+											<option value="В ожидании">В ожидании</option>
+										</select>
+										<button class="button-add button-add--primary select-add__button" type="button"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="bottom-action">
+				<button class="button button--primary margin-right-6">Сохранить</button>
+				<button class="button">Сохранить и выйти</button>
+				<button class="button-delete margin-left-auto">Удалить</button>
+			</div>
+		</main>
+	</div>
+	<!-- body -->
+	<div class="none demo--1">
+		<h2 class="page-title margin-top-4 padding-left-4">Настройка полей таблицы</h2>
+		<div class="flex">
+			<div class="flex flex--v padding-left-4 padding-top-4 width-200 popup-sidebar">
+				<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+					<input type="checkbox" name="2" id="2" class="checkbox-bunch__input" checked>
+					<label for="2" class="checkbox-bunch__label">Номер</label>
+				</div>
+				<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+					<input type="checkbox" name="3" id="3" class="checkbox-bunch__input" checked>
+					<label for="3" class="checkbox-bunch__label">Дата и время</label>
+				</div>
+				<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+					<input type="checkbox" name="1" id="1" class="checkbox-bunch__input" checked>
+					<label for="1" class="checkbox-bunch__label">Тип клиента</label>
+				</div>
+				<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+					<input type="checkbox" name="4" id="4" class="checkbox-bunch__input" checked>
+					<label for="4" class="checkbox-bunch__label">Покупатель</label>
+				</div>
+			</div>
+			<div class="background-content margin-left-6 padding-left-4 padding-right-4 grid-form width-fit-content overflow-auto">
+				<h3 class="inner-title padding-top-4 margin-bottom-0">Скрытые поля</h3>
+				<b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div>
+				<b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div><b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div><b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div><b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div><b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div><b class="category-title grid-column-3">Оплата</b>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Оплачено</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Тип оплаты</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Дата полной оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Реквизиты для оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Статус полной фиксированный</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-item flex flex--v">
+					<div class="flex flex--v margin-left-auto width-300">
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма к оплате</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Сумма оплаты</label>
+						</div>
+						<div class="checkbox-bunch checkbox-bunch--s margin-bottom-2">
+							<input type="checkbox" name="1" id="1" class="checkbox-bunch__input">
+							<label for="1" class="checkbox-bunch__label">Операция фиксафиксафикса лослд влоыл</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="none demo--2">
+		<div class="flex flex-ali-c padding-right-4 padding-left-4">
+			<h2 class="page-title margin-top-4">Добавление товара</h2>
+			<form class="search-block margin-left-auto">
+				<input type="search" class="input">
+				<button type="submit" class="search-block__button">Поиск</button>
+			</form>
+		</div>
+		<section class="table table--modal" style="grid-template-columns:  repeat(4, minmax(max-content, 1fr))">
+			<div class="table__row table__row--title">
+				<div class="table__cell flex" data-type="text-short">
+					<div class="sort-bunch">
+						<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+						<span class="sort-bunch__bottom">По убыванию</span>
+					</div>
+					<a href="#">Товар</a>
+				</div>
+				<div class="table__cell flex" data-type="text-short">
+					<div class="sort-bunch">
+						<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+						<span class="sort-bunch__bottom">По убыванию</span>
+					</div>
+					<a href="#">Артикул</a>
+				</div>
+				<div class="table__cell flex" data-type="text-short">
+					<div class="sort-bunch">
+						<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+						<span class="sort-bunch__bottom">По убыванию</span>
+					</div>
+					<a href="#">Наличие</a>
+				</div>
+				<div class="table__cell flex" data-type="text-short">
+					<div class="sort-bunch">
+						<span class="sort-bunch__top sort-bunch__top--active">По возрастанию</span>
+						<span class="sort-bunch__bottom">По убыванию</span>
+					</div>
+					<a href="#">Цена</a>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table__row" data-action="open-next" data-toggleclass="table__row--selected">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table table--modal grid-column-4 table--level" style="grid-template-columns:  repeat(4, minmax(max-content, 1fr))">
+				<div class="table__row">
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						<img src="assets/img/order-product.png" alt="" class="padding-left-4">
+						<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						40031CNT6B
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						<div class="change-quantity margin-right-2">
+							<div class="change-quantity__set-down">-</div>
+							<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+							<div class="change-quantity__set-up">+</div>
+						</div>
+						из 40 шт.
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						590₽
+						<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						<img src="assets/img/order-product.png" alt="" class="padding-left-4">
+						<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						40031CNT6B
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						<div class="change-quantity margin-right-2">
+							<div class="change-quantity__set-down">-</div>
+							<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+							<div class="change-quantity__set-up">+</div>
+						</div>
+						из 40 шт.
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						590₽
+						<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+					</div>
+				</div>
+				<div class="table__row">
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						<img src="assets/img/order-product.png" alt="" class="padding-left-4">
+						<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						40031CNT6B
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						<div class="change-quantity margin-right-2">
+							<div class="change-quantity__set-down">-</div>
+							<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+							<div class="change-quantity__set-up">+</div>
+						</div>
+						из 40 шт.
+					</div>
+					<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+						590₽
+						<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="table__row">
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<img src="assets/img/order-product.png" alt="">
+					<a href="#" class="link margin-left-5">Бальзам Ла Рош Позе (La Roche-Posay) Цикапласт В5</a>
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					40031CNT6B
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					<div class="change-quantity margin-right-2">
+						<div class="change-quantity__set-down">-</div>
+						<input type="number" name="" id="" class="change-quantity__input" value="1" min="0" max="40">
+						<div class="change-quantity__set-up">+</div>
+					</div>
+					из 40 шт.
+				</div>
+				<div class="table__cell flex flex-ali-c padding-top-1 padding-bottom-1">
+					590₽
+					<a href="" class="margin-left-auto"><img src="assets/img/icon/notebook.svg" alt=""></a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

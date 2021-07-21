@@ -1,0 +1,10 @@
+.avatar{
+	box-shadow: $main-shadow;
+	border-radius: 100%;
+	background-color: $bg-color;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

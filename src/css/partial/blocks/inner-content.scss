@@ -1,0 +1,10 @@
+.inner-content{
+	background-color: $bg-block-color;
+	box-shadow: $main-shadow;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	border-radius: $default-brs;
+	display: flex;
+	flex-direction: column;
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Страница заказа</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="page-wrapper page-wrapper--close-menu">
+		<header class="page-header">
+			<div class="page-header__logo">
+				<a class="page-header__logo-img" href="index.html">
+					<img src="assets/img/logo.svg" alt="" class="page-header__logo-img-content">
+				</a>
+				<div class="page-header__logo-text"></div>
+			</div>
+			<div class="page-header__actions">
+				<div class="page-header__actions-notification">
+					<span class="page-header__actions-notification-value">3</span>
+				</div>
+				<form class="search-block margin-left-auto">
+					<input type="search" class="input">
+					<button type="submit" class="search-block__button">Поиск</button>
+				</form>
+			</div>
+		</header>
+		<aside class="sidebar">
+			<ul class="sidebar__list">
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/content.svg" alt="Контент" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Контент</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Контент</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/services.svg" alt="Сервисы" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Сервисы</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Сервисы</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/marketing.svg" alt="Маркетинг" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Маркетинг</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Маркетинг</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/settings.svg" alt="Настройки" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Настройки</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Настройки</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item sidebar__nav-list-item--open">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="sidebar__list-item">
+					<img src="assets/img/icon/cart.svg" alt="Магазин" class="sidebar__list-item-img">
+					<span class="sidebar__list-item-value">Магазин</span>
+					<div class="sidebar__nav">
+						<span class="sidebar__nav-close"></span>
+						<b class="sidebar__nav-title">Магазин</b>
+						<ul class="sidebar__nav-list">
+							<li class="sidebar__nav-list-item">
+								<span class="sidebar__nav-list-item-level">Контроль доступа</span>
+								<ul class="sidebar__nav-list-inner">
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Список пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Группы пользователей</a></li>
+									<li class="sidebar__nav-list-inner-item"><a href="" class="sidebar__nav-list-inner-item-link">Уровни доступа</a></li>
+								</ul>
+							</li>
+							<li class="sidebar__nav-list-item">
+								<a href="" class="sidebar__nav-list-item-link">Инструменты</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Производительность</a>
+							</li>
+							<li class="sidebar__nav-list-item">
+								</span><a href="" class="sidebar__nav-list-item-link">Локализация</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="sidebar__user">
+				<a href="" class="sidebar__user-main">
+					<img src="assets/img/user.png" alt="" class="sidebar__user-main-img">
+				</a>
+				<ul class="sidebar__user-menu">
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+					<li class="sidebar__user-menu-item">
+						<a href="" class="sidebar__user-menu-item-link">
+							<img src="assets/img/icon/sign-out.svg" alt="" class="sidebar__use-menu-item-link-img">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<main class="page-main padding-bottom-0">
+			<h1 class="page-title">Заказ №14b8</h1>
+			<form class="inner-content margin-bottom-5">
+				<section class="grid-form margin-bottom-6">
+					<div class="form-buttons margin-top-0">
+						<div class="buttons-bunch">
+							<div class="dropdown button buttons-bunch__item">
+								<span class="dropdown__title">Действия</span>
+								<ul class="dropdown__list">
+									<li class="dropdown__list-item">Удалить</li>
+									<li class="dropdown__list-item">Изменить</li>
+								</ul>
+							</div><button class="button buttons-bunch__item" type="button">
+								История
+							</button>
+						</div>
+						<div class="flex width-200 height-full">
+							<select name="" class="select select--default">
+								<option value="Выполнен">Выполнен</option>
+								<option value="Отложен">Отложен</option>
+								<option value="В ожидании">В ожидании</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="lastname" class="form-item__label">Страна</label>
+						<select name="" class="select select--default">
+							<option value="Выполнен">Россия</option>
+							<option value="Отложен">Отложен</option>
+							<option value="В ожидании">В ожидании</option>
+						</select>
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="name" class="form-item__label">Менеджер</label>
+						<select name="" class="select select--default">
+							<option value="Выполнен">Сергей</option>
+							<option value="Отложен">Отложен</option>
+							<option value="В ожидании">В ожидании</option>
+						</select>
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="name" class="form-item__label">Способ</label>
+						<select name="" class="select select--default">
+							<option value="Выполнен">В один клик</option>
+							<option value="Отложен">Отложен</option>
+							<option value="В ожидании">В ожидании</option>
+						</select>
+					</div>
+				</section>
+				<h3 class="inner-title">
+					Покупатель</h3>
+				<div class="form-buttons margin-top-0 margin-bottom-3">
+					<a class="button button--primary buttons-bunch__item" href="client-item.html" target="_blank">
+						Иванов Кирилл <img src="assets/img/icon/new-page.svg" alt="" class="button__img">
+					</a>
+				</div>
+				<section class="grid-form margin-bottom-6">
+					<div class="form-item form-item--invert">
+						<label for="zip" class="form-item__label">Фамилия</label>
+						<input type="text" name="zip" id="zip" class="input" value="Иванов">
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="city" class="form-item__label">Имя</label>
+						<input type="text" name="city" id="city" class="input" value="Кирилл">
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="region" class="form-item__label">Отчество</label>
+						<input type="text" name="region" id="region" class="input" value="">
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="street" class="form-item__label">Email</label>
+						<input type="text" name="street" id="street" class="input" value="ivanovKir@gmail.com">
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="metro" class="form-item__label">Телефон</label>
+						<input type="text" name="metro" id="metro" class="input" value="+7-(966)-328-68-51">
+					</div>
+					<div class="form-item form-item--invert">
+						<label for="metro" class="form-item__label">Доп.телефон</label>
+						<input type="text" name="metro" id="metro" class="input" value="+7-(966)-328-68-51">
+					</div>
+				</section>
+				<h3 class="inner-title">
+					Состав заказа<button class="button button--primary buttons-bunch__item" href="client-item.html" type="button">
+						Добавить товар <img src="assets/img/icon/add.svg" alt="" class="button__img">
+					</button>
+				</h3>
+				<section class="order-table">
+					<div class="order-table__row order-table__row--title">
+						<div class="order-table__row-item order-table__product">Товар</div>
+						<div class="order-table__row-item order-table__prop">Свойства</div>
+						<div class="order-table__row-item order-table__code">Код АП</div>
+						<div class="order-table__row-item order-table__location">Код АП</div>
+						<div class="order-table__row-item order-table__price">Цена</div>
+						<div class="order-table__row-item order-table__sale">Скидка</div>
+						<div class="order-table__row-item order-table__value">Кол-во</div>
+						<div class="order-table__row-item order-table__total">Стоимость</div>
+					</div>
+					<div class="order-table__row">
+						<div class="order-table__row-item order-table__product">
+							<div class="flex">
+								<img src="assets/img/order-product.png" alt="" class="order-table__product-img">
+								<a class="link" href="#">Бальзам Ла Рош Позе
+									(La Roche-Posay)
+									Цикапласт В5</a>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__prop">
+							<div class="flex flex--v">
+								<div class="flex margin-bottom-2"><span class="order-table__prop-key">Производитель:</span>La Roshe</div>
+								<div class="flex"><span class="order-table__prop-key">Страна:</span>Россия</div>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__code">40031CNT6B</div>
+						<div class="order-table__row-item order-table__location">На Ясногорской 2</div>
+						<div class="order-table__row-item order-table__price">590₽</div>
+						<div class="order-table__row-item order-table__sale"><input type="text" class="input input--s" value="0₽"></div>
+						<div class="order-table__row-item order-table__value"><input type="text" class="input input--s" value="1"></div>
+						<div class="order-table__row-item order-table__total">
+							<div class="flex flex--v">590₽
+								<button class="button-delete margin-top-2 order-table__total-delete">Удалить</button></div>
+						</div>
+					</div>
+					<div class="order-table__row">
+						<div class="order-table__row-item order-table__product">
+							<div class="flex">
+								<img src="assets/img/order-product.png" alt="" class="order-table__product-img">
+								<a class="link" href="#">Бальзам Ла Рош Позе
+									(La Roche-Posay)
+									Цикапласт В5</a>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__prop">
+							<div class="flex flex--v">
+								<div class="flex margin-bottom-2"><span class="order-table__prop-key">Производитель:</span>La Roshe</div>
+								<div class="flex"><span class="order-table__prop-key">Страна:</span>Россия</div>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__code">40031CNT6B</div>
+						<div class="order-table__row-item order-table__location">На Ясногорской 2</div>
+						<div class="order-table__row-item order-table__price">590₽</div>
+						<div class="order-table__row-item order-table__sale"><input type="text" class="input input--s" value="0₽"></div>
+						<div class="order-table__row-item order-table__value"><input type="text" class="input input--s" value="1"></div>
+						<div class="order-table__row-item order-table__total">
+							<div class="flex flex--v">590₽
+								<button class="button-delete margin-top-2 order-table__total-delete">Удалить</button></div>
+						</div>
+					</div>
+					<div class="order-table__row">
+						<div class="order-table__row-item order-table__product">
+							<div class="flex">
+								<img src="assets/img/order-product.png" alt="" class="order-table__product-img">
+								<a class="link" href="#">Бальзам Ла Рош Позе
+									(La Roche-Posay)
+									Цикапласт В5</a>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__prop">
+							<div class="flex flex--v">
+								<div class="flex margin-bottom-2"><span class="order-table__prop-key">Производитель:</span>La Roshe</div>
+								<div class="flex"><span class="order-table__prop-key">Страна:</span>Россия</div>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__code">40031CNT6B</div>
+						<div class="order-table__row-item order-table__location">На Ясногорской 2</div>
+						<div class="order-table__row-item order-table__price">590₽</div>
+						<div class="order-table__row-item order-table__sale"><input type="text" class="input input--s" value="0₽"></div>
+						<div class="order-table__row-item order-table__value"><input type="text" class="input input--s" value="1"></div>
+						<div class="order-table__row-item order-table__total">
+							<div class="flex flex--v">590₽
+								<button class="button-delete margin-top-2 order-table__total-delete">Удалить</button></div>
+						</div>
+					</div>
+					<div class="order-table__row">
+						<div class="order-table__row-item order-table__product">
+							<div class="flex">
+								<img src="assets/img/order-product.png" alt="" class="order-table__product-img">
+								<a class="link" href="#">Бальзам Ла Рош Позе
+									(La Roche-Posay)
+									Цикапласт В5</a>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__prop">
+							<div class="flex flex--v">
+								<div class="flex margin-bottom-2"><span class="order-table__prop-key">Производитель:</span>La Roshe</div>
+								<div class="flex"><span class="order-table__prop-key">Страна:</span>Россия</div>
+							</div>
+						</div>
+						<div class="order-table__row-item order-table__code">40031CNT6B</div>
+						<div class="order-table__row-item order-table__location">На Ясногорской 2</div>
+						<div class="order-table__row-item order-table__price">590₽</div>
+						<div class="order-table__row-item order-table__sale"><input type="text" class="input input--s" value="0₽"></div>
+						<div class="order-table__row-item order-table__value"><input type="text" class="input input--s" value="1"></div>
+						<div class="order-table__row-item order-table__total">
+							<div class="flex flex--v">590₽
+								<button class="button-delete margin-top-2 order-table__total-delete">Удалить</button></div>
+						</div>
+					</div>
+					<div class="order-table__row order-table__row--border">
+						<div class="order-table__total-sale flex width-300 margin-left-auto">
+							<b class="order-table__total-sale-title margin-right-4">Разовая скидка</b>
+							<div class="order-table__total-sale-bunch flex margin-right-4"><input type="text" class="input input--s" value="1">%</div>
+							<div class="order-table__total-sale-bunch flex"><input type="text" class="input input--s" value="1">₽</div>
+						</div>
+					</div>
+					<div class="order-table__row">
+						<div class="order-table__total-sub flex width-300 margin-left-auto flex flex--v">
+							<div class="flex margin-bottom-2"><span class="sub-text margin-right-auto">Стоимость товаров:</span>2 590₽</div>
+							<div class="flex margin-bottom-2"><span class="sub-text margin-right-auto">Сумма скидок по заказу:</span>0₽</div>
+							<div class="flex margin-bottom-2"><span class="sub-text margin-right-auto">Стоимость доставки:</span>0₽</div>
+							<div class="flex margin-bottom-3"><b class="margin-right-auto">Итого:</b>2 590₽</div>
+						</div>
+					</div>
+				</section>
+				<section class="flex padding-top-6">
+					<div class="flex flex--v padding-right-5 width-min-cont flex-grow-2">
+						<h3 class="inner-title">
+							Доставка</h3>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="lastname" class="form-item__label">Тип доставки</label>
+							<select name="" class="select select--default">
+								<option value="Выполнен">Курьер</option>
+								<option value="Отложен">Отложен</option>
+								<option value="В ожидании">В ожидании</option>
+							</select>
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="zip" class="form-item__label">Почтовый индекс</label>
+							<input type="text" name="zip" id="zip" class="input" value="143900">
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="zip" class="form-item__label">Регион</label>
+							<input type="text" name="zip" id="zip" class="input" value="">
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="zip" class="form-item__label">Город</label>
+							<input type="text" name="zip" id="zip" class="input" value="Балашиха">
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="zip" class="form-item__label">Регион</label>
+							<input type="text" name="zip" id="zip" class="input" value="">
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="zip" class="form-item__label">Улица</label>
+							<input type="text" name="zip" id="zip" class="input" value="Твардовского">
+						</div>
+						<div class="grid-form margin-bottom-3">
+							<div class="form-item form-item--invert">
+								<label for="zip" class="form-item__label">Дом</label>
+								<input type="text" name="zip" id="zip" class="input" value="13">
+							</div>
+							<div class="form-item form-item--invert">
+								<label for="zip" class="form-item__label">Квартира</label>
+								<input type="text" name="zip" id="zip" class="input" value="154">
+							</div>
+							<div class="form-item form-item--invert">
+								<label for="zip" class="form-item__label">Строение</label>
+								<input type="text" name="zip" id="zip" class="input" value="1">
+							</div>
+							<div class="form-item form-item--invert">
+								<label for="zip" class="form-item__label">Подъезд</label>
+								<input type="text" name="zip" id="zip" class="input" value="1">
+							</div>
+							<div class="form-item form-item--invert">
+								<label for="zip" class="form-item__label">Этаж</label>
+								<input type="text" name="zip" id="zip" class="input" value="14">
+							</div>
+							<div class="form-item form-item--invert">
+								<label for="zip" class="form-item__label">Корпус</label>
+								<input type="text" name="zip" id="zip" class="input" value="2">
+							</div>
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="metro" class="form-item__label">Дополнительная информация</label>
+							<textarea type="text" name="metro" id="metro" class="textarea" value=""></textarea>
+						</div>
+						<div class="form-item form-item--invert margin-bottom-5">
+						<label for="zip" class="form-item__label">Дата доставки</label>
+						<input type="text" name="zip" id="zip" class="input date" value="">
+					</div>
+					</div>
+					<div class="flex flex--v padding-left-4 width-min-cont flex-grow-2">
+						<h3 class="inner-title">
+							Дополнительно</h3>
+							<div class="form-item form-item--invert margin-bottom-3">
+							<label for="metro" class="form-item__label">Комментарий клиента</label>
+							<textarea type="text" name="metro" id="metro" class="textarea" value=""></textarea>
+						</div>
+						<div class="form-item form-item--invert margin-bottom-3">
+							<label for="metro" class="form-item__label">Комментарий оператора</label>
+							<textarea type="text" name="metro" id="metro" class="textarea" value=""></textarea>
+						</div>
+					</div>
+				</section>
+			</form>
+			<div class="bottom-action">
+				<button class="button button--primary margin-right-6">Сохранить</button>
+				<button class="button">Сохранить и выйти</button>
+				<button class="button-delete margin-left-auto">Удалить</button>
+			</div>
+		</main>
+	</div>
+	<!-- body -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

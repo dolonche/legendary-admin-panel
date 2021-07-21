@@ -1,0 +1,34 @@
+.tingle-modal {
+	background-color: rgba(51, 51, 51, 0.9);
+	cursor: default;
+	backdrop-filter: none;
+
+	&-box {
+		font: inherit;
+		background-color: $bg-color;
+		border-radius: $default-brs;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		box-shadow: $main-shadow;
+		max-width: calc(100% - 100px);
+		min-width: 50%;
+		width: auto;
+
+		&__content {
+			padding: 0;
+		}
+	}
+
+	&__close {
+		transform: rotate(45deg);
+		background-image: url(../assets/img/icon/add.svg);
+		background-repeat: no-repeat;
+		background-size: 32px 32px;
+		top: 20px;
+		right: 20px;
+
+		span {
+			display: none;
+		}
+	}
+}

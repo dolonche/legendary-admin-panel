@@ -1,0 +1,17 @@
+.page-title{
+	color: $bg-anti-color;
+	font-size: 22px;
+	font-weight: 500;
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	&::after{
+		content:"";
+		width: 22px;
+		height: 26px;
+		background-image: url(../assets/img/title-decor.svg);
+		background-size: cover;
+		background-position: center;
+		margin-left: 6px;
+	}
+}

@@ -1,0 +1,28 @@
+.button-add {
+	appereance: none;
+	width: 32px;
+	height: 32px;
+	font-size: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	background-image: url(../assets/img/icon/add-dark.svg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.4s transform;
+
+	&--primary {
+		background-color: $main-color;
+		background-image: url(../assets/img/icon/add.svg);
+	}
+
+	&--s {
+		width: 18px;
+		height: 18px;
+	}
+
+	&--remove {
+		transform: rotate(45deg);
+	}
+}

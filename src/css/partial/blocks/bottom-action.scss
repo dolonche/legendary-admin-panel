@@ -1,0 +1,14 @@
+.bottom-action{
+	border-top-left-radius: $default-brs;
+	border-top-right-radius: $default-brs;
+	box-shadow: $main-shadow;
+	background-color: $bg-color;
+	position: sticky;
+	bottom: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	display: flex;
+	align-items: center;
+}

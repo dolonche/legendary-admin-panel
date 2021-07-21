@@ -1,0 +1,29 @@
+.width {
+	&-100 {
+		width: 100px !important;
+	}
+
+	&-200 {
+		width: 200px !important;
+	}
+
+	&-300 {
+		width: 300px !important;
+	}
+
+	&-min-cont {
+		width: min-content !important;
+	}
+
+	&-max-cont {
+		width: max-content !important;
+	}
+
+	&-fit-cont {
+		width: fit-content !important;
+	}
+
+	&-auto {
+		width: auto !important;
+	}
+}
